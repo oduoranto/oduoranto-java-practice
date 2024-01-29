@@ -27,6 +27,23 @@ public class Product {
      }
 
      public void drawpixelAt(int x, int y, String color){
-         System.out.printf("Drawing pixel at %d and  %d with colour %f", x,y,color);
+         System.out.printf(">>Drawing pixel at %d and  %d with colour %f", x,y,color);
+     }
+ }
+ class ComputerCase extends Product{
+    private String powerSupply;
+
+
+     public ComputerCase(String model, String manufacture) {
+         super(model, manufacture);
+     }
+
+     public ComputerCase(String model, String manufacture, String powerSupply) {
+         super(model, manufacture);
+         this.powerSupply = powerSupply;
+     }
+
+     public void pressPowerbutton(){
+         System.out.println(">>Power button pressed...");
      }
  }
