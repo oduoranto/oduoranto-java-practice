@@ -27,7 +27,8 @@ public class Product {
      }
 
      public void drawpixelAt(int x, int y, String color){
-         System.out.printf(">>Drawing pixel at %d and  %d with colour %f", x,y,color);
+         toString().formatted(">>Drawing pixel at %d and %d with color %f",x,y,color);
+       //  System.out.printf(">>Drawing pixel at %d and  %d with colour %f", x,y,color);
      }
  }
  class ComputerCase extends Product{
@@ -47,18 +48,18 @@ public class Product {
          System.out.println(">>Power Button Pressed.");
      }
  }
- class motherBoard extends Product{
+ class MotherBoard extends Product{
     private int ramslot;
     private int cardslot;
     private  String bios;
 
 
 
-     public motherBoard(String model, String manufacture) {
+     public MotherBoard(String model, String manufacture) {
          super(model, manufacture);
      }
 
-     public motherBoard(String model, String manufacture, int ramslot, int cardslot, String bios) {
+     public MotherBoard(String model, String manufacture, int ramslot, int cardslot, String bios) {
          super(model, manufacture);
          this.ramslot = ramslot;
          this.cardslot = cardslot;
