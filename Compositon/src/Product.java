@@ -27,7 +27,7 @@ public class Product {
      }
 
      public void drawpixelAt(int x, int y, String color){
-         toString().formatted(">>Drawing pixel at %d and %d with color %f",x,y,color);
+         System.out.println(String.format(">>Drawing pixel at %d and %d with color %s",x,y,color));
        //  System.out.printf(">>Drawing pixel at %d and  %d with colour %f", x,y,color);
      }
  }
