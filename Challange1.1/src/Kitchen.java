@@ -9,9 +9,12 @@ class Refrigirator extends Kitchen{
     }
 
     public void orderFood(){
+        if(hasWorkToDo == true){
         System.out.println(">>Ordering Food..");
-    }
-}
+    }else {
+            System.out.println(">>Nothing to order!");
+        }
+}}
 class DishWasher extends Kitchen{
 
     protected boolean hasWorkToDo;
@@ -28,16 +31,17 @@ class DishWasher extends Kitchen{
             System.out.println(">>No Dishes!");
         }
 }}
-class CoffeeMaker extends Kitchen{
+class CoffeeMaker extends Kitchen {
     protected boolean hasWorkToDo;
 
     public CoffeeMaker(boolean hasWorkToDo) {
         this.hasWorkToDo = hasWorkToDo;
     }
-    public void brewCoffee(){
-        if(hasWorkToDo == true){
+
+    public void brewCoffee() {
+        if (hasWorkToDo == true) {
             System.out.println(">>Brewing coffee! ");
-        }else {
+        } else {
             System.out.println(">>Empty");
         }
     }
