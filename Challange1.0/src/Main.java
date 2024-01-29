@@ -4,19 +4,14 @@ public class Main {
     public static void main(String[] args) {
 
 
+Worker john = new Worker("Radier","25/07/2010");
+        System.out.println(  "Age = "+ john.getAge());
+        System.out.println("Worker's paycheck = $" + john.collectPay());
 
+        SalariedEmployee anto = new SalariedEmployee("Oduor","11/10/2002",00,"2024",2000.90);
+        System.out.println("Age = " + anto.getAge());
+        System.out.println( "Worker's paycheck is " + anto.collectPay());
 
-        Worker worker = new Worker( "Antony Oduor","2002","Unknown");
-
-        Employee empl = new Employee();
-        System.out.println(empl);
-        
-
-        SalariedEmployee saEm = new SalariedEmployee("Antony","2000","Unkown",90000001,"2024",4040000,false);
-        System.out.println(saEm);
-        System.out.println(worker.getAge());
-        System.out.println(worker.collectPay());
-        saEm.isRetired();
 
 
 }}
