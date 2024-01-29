@@ -44,6 +44,27 @@ public class Product {
      }
 
      public void pressPowerbutton(){
-         System.out.println(">>Power button pressed...");
+         System.out.println(">>Power Button Pressed.");
+     }
+ }
+ class motherBoard extends Product{
+    private int ramslot;
+    private int cardslot;
+    private  String bios;
+
+
+
+     public motherBoard(String model, String manufacture) {
+         super(model, manufacture);
+     }
+
+     public motherBoard(String model, String manufacture, int ramslot, int cardslot, String bios) {
+         super(model, manufacture);
+         this.ramslot = ramslot;
+         this.cardslot = cardslot;
+         this.bios = bios;
+     }
+     public void loadProgram(String programName){
+         System.out.println(">>Loading " + programName + "...");
      }
  }
