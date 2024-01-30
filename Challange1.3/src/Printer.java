@@ -21,7 +21,16 @@ public class Printer {
         }else if(tonerLevel < 0){
             return -1;
         }else {
-            return tonerLevel
+            return tonerLevel;
+        }
+
+    }
+    public int printPages(int pages){
+        if(duplex == true){
+            pagesPrinted += (pages * 2);
+            return pagesPrinted;
+        }else {
+            return pagesPrinted;
         }
 
     }
