@@ -1,4 +1,7 @@
 public class Printer {
     private int tonerLevel;
-    private 
+    private int pagesPrinted;
+    private boolean duplex;
+
+    
 }
